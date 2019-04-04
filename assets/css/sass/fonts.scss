@@ -1,0 +1,17 @@
+// FONT TYPE DEFINITIONS
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Lobster', cursive;
+
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue-thin.eot');
+    src: url('../fonts/bebasneue-thin.woff') format('woff'),
+        url('../fonts/bebasneue-thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
