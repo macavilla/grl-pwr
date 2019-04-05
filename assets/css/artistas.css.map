@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,mBAAY;EACR,cAAc,EAAE,CAAC",
+"sources": ["artistas.scss"],
+"names": [],
+"file": "artistas.css"
+}

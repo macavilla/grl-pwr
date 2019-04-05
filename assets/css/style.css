@@ -118,6 +118,9 @@ button {
 --------------------------------------------------------------*/
 /*FUENTES*/
 /*COLORES*/
+.artista.fresa-kill {
+  grid-row-start: 3; }
+
 /*--------------------------------------------------------------
 5.0 General
 --------------------------------------------------------------*/
@@ -153,49 +156,71 @@ button {
     margin: 5vw 0;
     width: 70vw; }
 .wrapper main {
-  display: flex; }
-  .wrapper main #hours-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10vw 0 0; }
+  .wrapper main #horas-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-auto-rows: 22vw;
     justify-items: end;
     width: 19vw; }
-    .wrapper main #hours-grid .hour {
-      height: 22vw; }
-      .wrapper main #hours-grid .hour span {
-        font-family: "Open Sans", sans-serif;
-        font-weight: bold;
+    .wrapper main #horas-grid .hour span {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      position: relative;
+      width: 100%;
+      overflow-x: hidden; }
+      .wrapper main #horas-grid .hour span.purple {
+        color: #566CCB;
+        font-size: 2.4vw;
         position: relative;
-        width: 100%;
-        overflow-x: hidden; }
-        .wrapper main #hours-grid .hour span.purple {
-          color: #566CCB;
-          font-size: 2.4vw; }
-          .wrapper main #hours-grid .hour span.purple::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 10vw;
-            width: 71vw;
-            height: 1px;
-            background-image: linear-gradient(to right, #F4B400 33%, rgba(255, 255, 255, 0) 0%);
-            background-position: bottom;
-            background-size: 3px 1px;
-            background-repeat: repeat-x; }
-        .wrapper main #hours-grid .hour span.maize {
-          color: #F4B400;
-          font-size: 3.86vw; }
-          .wrapper main #hours-grid .hour span.maize::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 14vw;
-            width: 70vw;
-            border-bottom: 3px dashed #F4B400;
-            background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
-            background-position: bottom;
-            background-size: 3px 1px;
-            background-repeat: repeat-x; }
+        top: -3vw; }
+        .wrapper main #horas-grid .hour span.purple::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 10vw;
+          width: 71vw;
+          height: 1px;
+          border-bottom: 3px dotted #F4B400; }
+      .wrapper main #horas-grid .hour span.maize {
+        color: #F4B400;
+        font-size: 3.86vw;
+        position: relative;
+        top: -3vw; }
+        .wrapper main #horas-grid .hour span.maize::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 14vw;
+          width: 70vw;
+          border-bottom: 3px dashed #F4B400;
+          background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+          background-position: bottom;
+          background-size: 3px 1px;
+          background-repeat: repeat-x; }
+  .wrapper main #schedule {
+    width: 75vw; }
+    .wrapper main #schedule .escenario.violeta .artista {
+      background: #566CCB; }
+    .wrapper main #schedule .escenario .escenario-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(20, 22vw); }
+      .wrapper main #schedule .escenario .escenario-grid .artista {
+        color: white;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 0 4.8vw; }
+        .wrapper main #schedule .escenario .escenario-grid .artista .nombre {
+          font-family: serif; }
+        .wrapper main #schedule .escenario .escenario-grid .artista .horario {
+          color: white; }
 .wrapper footer {
   display: flex;
   justify-content: center;
@@ -203,5 +228,8 @@ button {
   .wrapper footer img {
     width: 85%;
     margin: 5vw 0; }
+
+.artista.fresa-kill {
+  grid-row-start: 3; }
 
 /*# sourceMappingURL=style.css.map */

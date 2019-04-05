@@ -35,16 +35,19 @@
 
 @import 'sass/btns';
 
+@import 'artistas';
+
 /*--------------------------------------------------------------
 5.0 General
 --------------------------------------------------------------*/
 
-*{
-	-webkit-box-sizing: border-box;
+* {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .wrapper {
     margin: 0 auto;
     padding: 0;
@@ -88,8 +91,8 @@
 
 
 
-.wrapper{
-    header{
+.wrapper {
+    header {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -97,35 +100,44 @@
 
         color: whitesmoke;
 
-        img{
+        img {
             margin: 5vw 0;
             width: 70vw;
         }
     }
 
 
-    main{
+    main {
         display: flex;
-        #hours-grid{
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 10vw 0 0;
+
+        #horas-grid {
             display: grid;
             grid-template-columns: 1fr;
+            // grid-template-rows: [hour-1630-start] 22vw [hour-17-start] 22vw  [hour-1730-start] 22vw  [hour-18-start] 22vw  [hour-1830-start] 22vw  [hour-19-start] 22vw  [hour-1930-start] 22vw  [hour-20-start] 22vw  [hour-2030-start] 22vw  [hour-21-start] 22vw  [hour-2130-start] 22vw  [hour-22-start] 22vw  [hour-2230-start] 22vw  [hour-23-start] 22vw  [hour-2330-start] 22vw  [hour-00-start] 22vw  [hour-0030-start] 22vw  [hour-01-start] 22vw  [hour-0130-start] 22vw  [hour-02-start] 22vw  [hour-0230-start] 22vw  [hour-03-start] 22vw [hour-0330-start]  22vw ;
             grid-auto-rows: 22vw;
             justify-items: end;
 
             width: 19vw;
 
-            .hour{
-           
+            .hour {
 
-                span{
+                span {
                     font-family: $open-sans;
                     font-weight: bold;
                     position: relative;
                     width: 100%;
                     overflow-x: hidden;
-                    &.purple{
+
+                    &.purple {
                         color: $purple;
                         font-size: 2.4vw;
+
+                        position: relative;
+                        top: -3vw;
+
                         &::after {
                             content: '';
                             position: absolute;
@@ -133,43 +145,92 @@
                             left: 10vw;
                             width: 71vw;
                             height: 1px;
-                            // border-bottom: 3px dotted $maize;
-                            background-image: linear-gradient(to right, $maize 33%, rgba(255, 255, 255, 0) 0%);
-                            background-position: bottom;
-                            background-size: 3px 1px;
-                            background-repeat: repeat-x;
+                            border-bottom: 3px dotted $maize;
+                            // background-image: linear-gradient(to right, $maize 33%, rgba(255, 255, 255, 0) 0%);
+                            // background-position: bottom;
+                            // background-size: 3px 1px;
+                            // background-repeat: repeat-x;
                         }
-    
+
                     }
-                    &.maize{
+
+                    &.maize {
                         color: $maize;
                         font-size: 3.86vw;
-                        &::after{
+
+                        position: relative;
+                        top: -3vw;
+
+                        &::after {
                             content: '';
                             position: absolute;
                             top: 50%;
                             left: 14vw;
                             width: 70vw;
                             border-bottom: 3px dashed $maize;
-                            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
-background-position: bottom;
-background-size: 3px 1px;
-background-repeat: repeat-x;
+                            background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+                            background-position: bottom;
+                            background-size: 3px 1px;
+                            background-repeat: repeat-x;
                         }
-    
+
                     }
 
                 }
             }
         }
+
+        #schedule {
+            width: 75vw;
+
+            .escenario {
+                &.violeta {
+                    .artista {
+                        background: $purple;
+                    }
+                }
+
+                .escenario-grid {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(20, 22vw);
+
+
+                    .artista {
+                        color: white;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 80%;
+                        padding: 0 4.8vw;
+
+                        .nombre {
+                            font-family: serif;
+                        }
+
+                        .horario {
+                            color: white;
+                        }
+                    }
+
+                }
+
+            }
+        }
     }
-    footer{
+
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+
+        img {
             width: 85%;
             margin: 5vw 0;
         }
     }
 }
+
+
+@import 'artistas';
