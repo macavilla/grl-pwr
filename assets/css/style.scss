@@ -199,6 +199,24 @@
                         background: $pink;
                     }
                 }
+                &.teatro {
+                    .artista {
+                        background: $aqua;
+                        p{
+
+                            color: #262524;
+                        }
+                    }
+                }
+                &.sum {
+                    .artista {
+                        background: $maize;
+                        p{
+
+                            color: #262524;
+                        }
+                    }
+                }
 
                 >.escenario-grid {
                     display: grid;

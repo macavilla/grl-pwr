@@ -194,12 +194,79 @@ button {
   grid-row-end: 15;
   margin-top: 1%;
   margin-bottom: 5%; }
+.verde .artista.sara-hebe {
+  grid-row-start: 15;
+  grid-row-end: 17;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+.verde .artista.ms-nina {
+  grid-row-start: 19;
+  grid-row-end: 20;
+  margin-top: -5%;
+  margin-bottom: 0%; }
+.verde .artista.color {
+  grid-row-start: 20;
+  grid-row-end: 22;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.verde .artista.kumbia-queers {
+  grid-row-start: 22;
+  grid-row-end: 24;
+  margin-top: 1%;
+  margin-bottom: 4%; }
 
 .sofar .artista.panoramicas {
   grid-row-start: 5;
   grid-row-end: 6;
   margin-top: 3%;
   margin-bottom: -3%; }
+.sofar .artista.piba-berreta {
+  grid-row-start: 7;
+  grid-row-end: 8;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.sofar .artista.agua-florida {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.sofar .artista.html {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  margin-top: -3%;
+  margin-bottom: 3%; }
+
+.teatro .artista.bimbotiquin {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-top: 1%;
+  margin-bottom: 4%; }
+.teatro .artista.ofelia-fernandez {
+  grid-row-start: 4;
+  grid-row-end: 7;
+  margin-top: 10%;
+  margin-bottom: 5%; }
+
+.sum .artista.autodefensa {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.sum .artista.twerk {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.sum .artista.autodefensa2 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.sum .artista.twerk2 {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
 /*--------------------------------------------------------------
 5.0 General
@@ -285,6 +352,14 @@ button {
       background: #00934D; }
     .wrapper main #schedule .escenario.sofar .artista {
       background: #FE4A64; }
+    .wrapper main #schedule .escenario.teatro .artista {
+      background: #72CCBD; }
+      .wrapper main #schedule .escenario.teatro .artista p {
+        color: #262524; }
+    .wrapper main #schedule .escenario.sum .artista {
+      background: #F4B400; }
+      .wrapper main #schedule .escenario.sum .artista p {
+        color: #262524; }
     .wrapper main #schedule .escenario > .escenario-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -383,11 +458,78 @@ button {
   grid-row-end: 15;
   margin-top: 1%;
   margin-bottom: 5%; }
+.verde .artista.sara-hebe {
+  grid-row-start: 15;
+  grid-row-end: 17;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+.verde .artista.ms-nina {
+  grid-row-start: 19;
+  grid-row-end: 20;
+  margin-top: -5%;
+  margin-bottom: 0%; }
+.verde .artista.color {
+  grid-row-start: 20;
+  grid-row-end: 22;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.verde .artista.kumbia-queers {
+  grid-row-start: 22;
+  grid-row-end: 24;
+  margin-top: 1%;
+  margin-bottom: 4%; }
 
 .sofar .artista.panoramicas {
   grid-row-start: 5;
   grid-row-end: 6;
   margin-top: 3%;
   margin-bottom: -3%; }
+.sofar .artista.piba-berreta {
+  grid-row-start: 7;
+  grid-row-end: 8;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.sofar .artista.agua-florida {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.sofar .artista.html {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  margin-top: -3%;
+  margin-bottom: 3%; }
+
+.teatro .artista.bimbotiquin {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-top: 1%;
+  margin-bottom: 4%; }
+.teatro .artista.ofelia-fernandez {
+  grid-row-start: 4;
+  grid-row-end: 7;
+  margin-top: 10%;
+  margin-bottom: 5%; }
+
+.sum .artista.autodefensa {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.sum .artista.twerk {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.sum .artista.autodefensa2 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+.sum .artista.twerk2 {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
 /*# sourceMappingURL=style.css.map */
