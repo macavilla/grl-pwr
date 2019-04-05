@@ -1,5 +1,76 @@
-.artista.fresa-kill {
+.violeta .artista.fresa-kill {
   grid-row-start: 3;
   grid-row-end: 4; }
+.violeta .artista.amazonas-crew {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.violeta .artista.femme-dargent {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.violeta .artista.ibiza-pareo {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.violeta .artista.she-devils {
+  grid-row-start: 10;
+  grid-row-end: 12;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+.violeta .artista.anita-tijoux {
+  grid-row-start: 13;
+  grid-row-end: 15;
+  margin-top: 0%;
+  margin-bottom: 5%; }
+.violeta .artista.marilina {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 16;
+  grid-row-end: 19;
+  margin-top: 9%;
+  margin-bottom: 4%; }
+.violeta .artista.miss-bolivia {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 20;
+  grid-row-end: 22;
+  margin-top: 0%;
+  margin-bottom: 0%; }
+
+.verde .artista.hienas {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin-top: 3%;
+  margin-bottom: -5%; }
+.verde .artista.las-ex {
+  grid-row-start: 7;
+  grid-row-end: 8;
+  margin-top: 3%;
+  margin-bottom: -3%; }
+.verde .artista.bimbo-custodio {
+  grid-row-start: 8;
+  grid-row-end: 10;
+  margin-top: 4%;
+  margin-bottom: -3%; }
+.verde .artista.misssil {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  margin-top: -3%;
+  margin-bottom: 0.5%; }
+.verde .artista.mami {
+  grid-row-start: 13;
+  grid-row-end: 15;
+  margin-top: 1%;
+  margin-bottom: 5%; }
+
+.sofar .artista.panoramicas {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin-top: 3%;
+  margin-bottom: -3%; }
 
 /*# sourceMappingURL=artistas.css.map */

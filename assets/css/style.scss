@@ -189,11 +189,21 @@
                         background: $purple;
                     }
                 }
+                &.verde {
+                    .artista {
+                        background: $green;
+                    }
+                }
+                &.sofar {
+                    .artista {
+                        background: $pink;
+                    }
+                }
 
-                .escenario-grid {
+                >.escenario-grid {
                     display: grid;
                     grid-template-columns: 1fr;
-                    grid-template-rows: repeat(20, 22vw);
+                    grid-template-rows: repeat(24, 11vw);
 
 
                     .artista {
@@ -202,18 +212,24 @@
                         flex-flow: row nowrap;
                         justify-content: space-between;
                         align-items: center;
-                        width: 80%;
+                        width: 60vw;
                         padding: 0 4.8vw;
 
                         .nombre {
-                            font-family: serif;
-
-                            font-size: 5vw;
+                            p{
+                                font-family: 'Oswald';
+                                font-size: 4vw;
+                                text-transform: uppercase;
+                                white-space: nowrap;
+                                
+                            }
                         }
                         
                         .horario {
+                            font-family: 'Open Sans', sans-serif;
                             color: white;
                             font-size: 3.38vw;
+                            white-space: nowrap;
                         }
                     }
 

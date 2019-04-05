@@ -5,6 +5,18 @@
 
 
 @font-face {
+    font-family: 'Grange';
+    src: url('../../fonts/Grange.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Knockout HTF27-JuniorBantamwt';
+    src: url('../../fonts/knockout-htf27-juniorbantamwt.ttf')  format('truetype');
+}
+
+@font-face {
     font-family: 'Bebas Neue';
     src: url('../fonts/bebasneue-thin.eot');
     src: url('../fonts/bebasneue-thin.woff') format('woff'),
