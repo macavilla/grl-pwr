@@ -117,7 +117,7 @@
             display: grid;
             grid-template-columns: 1fr;
             // grid-template-rows: [hour-1630-start] 22vw [hour-17-start] 22vw  [hour-1730-start] 22vw  [hour-18-start] 22vw  [hour-1830-start] 22vw  [hour-19-start] 22vw  [hour-1930-start] 22vw  [hour-20-start] 22vw  [hour-2030-start] 22vw  [hour-21-start] 22vw  [hour-2130-start] 22vw  [hour-22-start] 22vw  [hour-2230-start] 22vw  [hour-23-start] 22vw  [hour-2330-start] 22vw  [hour-00-start] 22vw  [hour-0030-start] 22vw  [hour-01-start] 22vw  [hour-0130-start] 22vw  [hour-02-start] 22vw  [hour-0230-start] 22vw  [hour-03-start] 22vw [hour-0330-start]  22vw ;
-            grid-auto-rows: 22vw;
+            grid-auto-rows: 11vw;
             justify-items: end;
 
             width: 19vw;
@@ -136,14 +136,14 @@
                         font-size: 2.4vw;
 
                         position: relative;
-                        top: -3vw;
+                        top: -2.1vw;
 
                         &::after {
                             content: '';
                             position: absolute;
                             top: 50%;
                             left: 10vw;
-                            width: 71vw;
+                            width: 64vw;
                             height: 1px;
                             border-bottom: 3px dotted $maize;
                             // background-image: linear-gradient(to right, $maize 33%, rgba(255, 255, 255, 0) 0%);
@@ -167,11 +167,11 @@
                             top: 50%;
                             left: 14vw;
                             width: 70vw;
-                            border-bottom: 3px dashed $maize;
-                            background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
-                            background-position: bottom;
-                            background-size: 3px 1px;
-                            background-repeat: repeat-x;
+                            border-bottom: 5px dashed $maize;
+                            // background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+                            // background-position: bottom;
+                            // background-size: 3px 1px;
+                            // background-repeat: repeat-x;
                         }
 
                     }
@@ -207,10 +207,13 @@
 
                         .nombre {
                             font-family: serif;
-                        }
 
+                            font-size: 5vw;
+                        }
+                        
                         .horario {
                             color: white;
+                            font-size: 3.38vw;
                         }
                     }
 

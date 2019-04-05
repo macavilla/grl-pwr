@@ -119,7 +119,8 @@ button {
 /*FUENTES*/
 /*COLORES*/
 .artista.fresa-kill {
-  grid-row-start: 3; }
+  grid-row-start: 3;
+  grid-row-end: 4; }
 
 /*--------------------------------------------------------------
 5.0 General
@@ -163,7 +164,7 @@ button {
   .wrapper main #horas-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 22vw;
+    grid-auto-rows: 11vw;
     justify-items: end;
     width: 19vw; }
     .wrapper main #horas-grid .hour span {
@@ -176,13 +177,13 @@ button {
         color: #566CCB;
         font-size: 2.4vw;
         position: relative;
-        top: -3vw; }
+        top: -2.1vw; }
         .wrapper main #horas-grid .hour span.purple::after {
           content: '';
           position: absolute;
           top: 50%;
           left: 10vw;
-          width: 71vw;
+          width: 64vw;
           height: 1px;
           border-bottom: 3px dotted #F4B400; }
       .wrapper main #horas-grid .hour span.maize {
@@ -196,11 +197,7 @@ button {
           top: 50%;
           left: 14vw;
           width: 70vw;
-          border-bottom: 3px dashed #F4B400;
-          background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
-          background-position: bottom;
-          background-size: 3px 1px;
-          background-repeat: repeat-x; }
+          border-bottom: 5px dashed #F4B400; }
   .wrapper main #schedule {
     width: 75vw; }
     .wrapper main #schedule .escenario.violeta .artista {
@@ -218,9 +215,11 @@ button {
         width: 80%;
         padding: 0 4.8vw; }
         .wrapper main #schedule .escenario .escenario-grid .artista .nombre {
-          font-family: serif; }
+          font-family: serif;
+          font-size: 5vw; }
         .wrapper main #schedule .escenario .escenario-grid .artista .horario {
-          color: white; }
+          color: white;
+          font-size: 3.38vw; }
 .wrapper footer {
   display: flex;
   justify-content: center;
@@ -230,6 +229,7 @@ button {
     margin: 5vw 0; }
 
 .artista.fresa-kill {
-  grid-row-start: 3; }
+  grid-row-start: 3;
+  grid-row-end: 4; }
 
 /*# sourceMappingURL=style.css.map */
