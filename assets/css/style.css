@@ -304,9 +304,49 @@ button {
     width: 70vw; }
 .wrapper main {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 22vw 0 0; }
+  margin: 4vw 0 0; }
+  .wrapper main #customDots {
+    width: 100%;
+    margin: 0 0 10vw; }
+    .wrapper main #customDots .slick-dots {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      width: 100%;
+      height: 20vw; }
+      .wrapper main #customDots .slick-dots li {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        border-bottom: 5px solid #F4B400; }
+        .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(1) {
+          border-bottom-color: #566CCB; }
+          .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(1) .tab {
+            color: #566CCB; }
+        .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(2) {
+          border-bottom-color: #00934D; }
+          .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(2) .tab {
+            color: #00934D; }
+        .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(3) {
+          border-bottom-color: #FE4A64; }
+          .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(3) .tab {
+            color: #FE4A64; }
+        .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(4) {
+          border-bottom-color: #72CCBD; }
+          .wrapper main #customDots .slick-dots li.slick-active:nth-of-type(4) .tab {
+            color: #72CCBD; }
+        .wrapper main #customDots .slick-dots li .tab {
+          color: #F4B400;
+          font-family: 'Lobster', serif;
+          font-size: 3.86vw;
+          text-align: center;
+          min-height: 13vw; }
+          .wrapper main #customDots .slick-dots li .tab span {
+            display: block;
+            font-size: 75%; }
   .wrapper main #horas-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -346,17 +386,6 @@ button {
           border-bottom: 5px dashed #F4B400; }
   .wrapper main #schedule {
     width: 75vw; }
-    .wrapper main #schedule .slick-dots {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      width: 90vw;
-      height: 20vw;
-      position: absolute;
-      top: -22vw;
-      left: -19vw; }
-      .wrapper main #schedule .slick-dots .tab {
-        background: red; }
     .wrapper main #schedule .escenario.violeta .artista {
       background: #566CCB; }
     .wrapper main #schedule .escenario.verde .artista {

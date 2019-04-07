@@ -109,9 +109,72 @@
 
     main {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 22vw 0 0;
+        margin: 4vw 0 0;
+
+        #customDots{
+            width: 100%;
+            margin: 0 0 10vw;
+
+            .slick-dots{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                
+                width: 100%;
+                height: 20vw;
+
+                li{
+
+                    display: flex;
+                    justify-content: center;
+                    width: 20%;
+                    border-bottom: 5px solid $maize;
+
+                    &.slick-active:nth-of-type(1){
+                        border-bottom-color: $purple;
+                        .tab{
+                            color: $purple;
+                        }
+                    }
+                    &.slick-active:nth-of-type(2){
+                        border-bottom-color: $green;
+                        .tab{
+                            color: $green;
+                        }
+                    }
+                    &.slick-active:nth-of-type(3){
+                        border-bottom-color: $pink;
+                        .tab{
+                            color: $pink;
+                        }
+                    }
+                    &.slick-active:nth-of-type(4){
+                        border-bottom-color: $aqua;
+                        .tab{
+                            color: $aqua;
+                        }
+                    }
+
+                    .tab{
+                        color: $maize;
+                        font-family: 'Lobster', serif;
+                        font-size: 3.86vw;
+                        text-align: center;
+
+                        min-height: 13vw;
+
+                        span{
+                            display: block;
+                            font-size: 75%;
+                        }
+                    }
+                }
+            }
+
+        }
 
         #horas-grid {
             display: grid;
@@ -181,22 +244,7 @@
 
         #schedule {
             width: 75vw;
-            .slick-dots{
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                
-                width: 90vw;
-                height: 20vw;
-                position: absolute;
-                top:-22vw;
-                left: -19vw;
-
-                .tab{
-                    background: red;
-                }
-            }
-
+         
             .escenario {
                 &.violeta {
                     .artista {
