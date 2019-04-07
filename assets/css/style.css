@@ -306,7 +306,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 10vw 0 0; }
+  margin: 22vw 0 0; }
   .wrapper main #horas-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -346,6 +346,17 @@ button {
           border-bottom: 5px dashed #F4B400; }
   .wrapper main #schedule {
     width: 75vw; }
+    .wrapper main #schedule .slick-dots {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      width: 90vw;
+      height: 20vw;
+      position: absolute;
+      top: -22vw;
+      left: -19vw; }
+      .wrapper main #schedule .slick-dots .tab {
+        background: red; }
     .wrapper main #schedule .escenario.violeta .artista {
       background: #566CCB; }
     .wrapper main #schedule .escenario.verde .artista {

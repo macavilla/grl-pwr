@@ -111,12 +111,11 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 10vw 0 0;
+        margin: 22vw 0 0;
 
         #horas-grid {
             display: grid;
             grid-template-columns: 1fr;
-            // grid-template-rows: [hour-1630-start] 22vw [hour-17-start] 22vw  [hour-1730-start] 22vw  [hour-18-start] 22vw  [hour-1830-start] 22vw  [hour-19-start] 22vw  [hour-1930-start] 22vw  [hour-20-start] 22vw  [hour-2030-start] 22vw  [hour-21-start] 22vw  [hour-2130-start] 22vw  [hour-22-start] 22vw  [hour-2230-start] 22vw  [hour-23-start] 22vw  [hour-2330-start] 22vw  [hour-00-start] 22vw  [hour-0030-start] 22vw  [hour-01-start] 22vw  [hour-0130-start] 22vw  [hour-02-start] 22vw  [hour-0230-start] 22vw  [hour-03-start] 22vw [hour-0330-start]  22vw ;
             grid-auto-rows: 11vw;
             justify-items: end;
 
@@ -182,6 +181,21 @@
 
         #schedule {
             width: 75vw;
+            .slick-dots{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                
+                width: 90vw;
+                height: 20vw;
+                position: absolute;
+                top:-22vw;
+                left: -19vw;
+
+                .tab{
+                    background: red;
+                }
+            }
 
             .escenario {
                 &.violeta {
