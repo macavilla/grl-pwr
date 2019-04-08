@@ -2,8 +2,10 @@ $(function() {
 
   $('#schedule').slick({
     infinite: false,
+    // mobileFirst: true,
     arrows: false,
     dots: true,
+    // easing: ,
     appendDots: $('#customDots'),
     customPaging: function (slider, i) {
       switch (i) {
@@ -32,6 +34,15 @@ $(function() {
           break;
       }
     },
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 5,
+    //       dots: true
+    //     }
+    //   }
+
     
   });
 });
