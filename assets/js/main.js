@@ -5,6 +5,7 @@ $(function() {
     // mobileFirst: true,
     arrows: false,
     dots: true,
+    touchThreshold: 10,
     // easing: ,
     appendDots: $('#customDots'),
     customPaging: function (slider, i) {
